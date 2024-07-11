@@ -1,7 +1,10 @@
 # keystore_dump_pro
 解决keystore_dump，无法dump HTTPS证书的问题
 
-![image](https://github.com/hackettk/keystore_dump_pro/assets/45909680/430a0c20-2a65-4835-9a53-2d4828719574)
+![image](https://github.com/hackettk/keystore_dump_pro/assets/45909680/c964865e-e759-407a-864a-7bdc26338c8a)
 
-命令
-``frida -Uf com.xxx.xxx -l keystore_dump_pro.js --no-pause``
+
+**Frida Command Line**
+`frida -Uf com.xxx.xxx -l keystore_dump_pro.js --no-pause`
+
+执行后，https证书 会在手机目录:``/data/user/0/com.xxx.xxx/client_keystore__xxx.p12``
